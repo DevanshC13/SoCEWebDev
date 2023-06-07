@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 5px;
+        }
+        header {
+    	    padding: 50px;
+    	    text-align: center;
+    	    color: #fff;
+    	    position: relative;
+        }
+	header p {
+    	    color: #000000; /* Change the color */
+	}
+
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Adjust the opacity as desired */
+    z-index: -1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000
+}
+        /* Content section styles */
+        section {
+    padding: 20px;
+    text-align: center;
+    display: inline-block; /* Add this line */
+    vertical-align: top; /* Add this line */
+}
+        
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .project {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+        
+        .project img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+        
+        .project a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        /* Personal info section styles */
+	.personal-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block; /* Add this line */
+    vertical-align: top; /* Add this line */
+}        
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+        <img src="assets/avatar.jpg" alt="Avatar" style="width: 150px;border-radius: 20%;border: 2px solid #fff;">
+        <h1>Hi, I'm Devansh</h1>
+        <p>Check out my projects and skills</p>
+	
+    </header>
+    
+    <!-- Personal info section -->
+
+    <section class="personal-info">
+        <h2>Personal Information</h2>
+        <p>Name: Devansh Chaudhary</p>
+        <p>Email: devansh@example.com</p>
+        <p>Location: IITK</p>
+    </section>
+    
+    <!-- Content section -->
+    <section>
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="assets/p1.png" alt="Project 1">
+            <a href="#">HTML</a>
+        </div>
+        <div class="project">
+            <img src="assets/p2.png" alt="Project 2">
+            <a href="#">CSS</a>
+        </div>
+        <div class="project">
+            <img src="assets/p3.png" alt="Project 3">
+            <a href="#">Javascript</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 My Portfolio. All rights reserved.
+    </footer>
+</body>
+</html
